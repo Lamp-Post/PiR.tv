@@ -46,7 +46,7 @@ var socket = io.connect(host);
 
 
                         var template = $('#videoTpl').html(),
-                        html = Mustache.to_html(template, jsonObj);
+								html = Mustache.to_html(template, jsonObj);
                         $('ul.video').append(html);	
 
                     });
@@ -69,9 +69,15 @@ var socket = io.connect(host);
         });
         $$(".r-header").tap(function(){
             socket.emit('controll',{action:"tap"}); 
-            $(".app-body").fadeToggle("fast", function () {});	
+            $(".app-body").fadeToggle("fast", function () {});
+			$.get(host+'/omx/quit',function(data){
+					console.log(data);
+			});
         });
         $$(".app-body").tap(function(){
+			$.get(host+'/omx/pause',function(data){
+					console.log(data);
+			});
         });
         $(".search input").change(function() {
             Youtube.getVideo($(this).val(), socket);

@@ -1,21 +1,43 @@
-#RaspberryPi TV
----------------
+##PiR.tv (Pirate TV)
+-------------------
+
+### Installation
+Must have Node.js installed on the Raspberry Pi. To install Node follow this [link](https://github.com/DonaldDerek/rPi-cheat-sheet)
+
+```
+	git clone https://github.com/DonaldDerek/PiR.tv.git 
+	cd PiR.tv/
+	npm install
+	npm start
+```	
+###Todo
+
++ ~~Change repo name to PiRtv~~ 
++ Add [torrent-stream](https://github.com/mafintosh/torrent-stream) The low level streaming torrent engine that [peerflix](https://github.com/mafintosh/peerflix) uses, of which [Popcorn Time](https://github.com/popcorn-team/popcorn-app) is based on
++ Add media sync
++ Add IMDB API
++ Add support to VLC
++ Front-end JS Code refactor
++ Add Channels other than Youtube
++ Stream music from Soundcloud and Jamendo
+
+Support the project on [suprmasv.com](https://www.suprmasv.com/projects/45/Pirate%20TV)
+
+### Birth
 This project was born during a workshop given at [Lamba Labs - Beirut Hacker Space](http://lambalabs.org/) and it was announced during the [Google IO Extend Beirut 2013 Event](https://plus.google.com/u/0/events/cp2togh80nq76q6p301ed3vkodo) Organized by [GDG-Beirut](https://plus.google.com/u/0/102062106640051908932)
 
 ![alt text](http://blog.donaldderek.com/wp-content/uploads/2013/06/front_end_raspberry_pi_tv.png "RaspberryPi TV")
 
 Find the orignal post on my [blog](http://blog.donaldderek.com/2013/06/build-your-own-google-tv-using-raspberrypi-nodejs-and-socket-io/)
 
-Special Thanks to Geek Friends [kamicut](https://github.com/kamicut), [emile818](https://github.com/emile818), [tUrG0n](https://github.com/tUrG0n), [Link](https://github.com/Link-), [rhamzeh](https://github.com/rhamzeh) and [acrylc](https://github.com/acrylc) for their constant support and motivation.
-
-##Interesting Forks
+###Interesting Forks
 -------------------
 * [Angular-rPiTV](https://github.com/viperfx/angular-rpitv) by [ViperFx](https://github.com/viperfx)
 * [Node-mc](https://github.com/dogonthehorizon/node-mc) by [Fernando Freire](https://github.com/dogonthehorizon/)
-* [rPiTV-Remote-Android](https://github.com/almyz125/rPiTV-Remote-Android) by [almyz125](https://github.com/almyz125/)
+* [rPiTV-Remote-Android](https://github.com/MelonSmasher/rPiTV-Remote-Android) by [MelonSmasher](https://github.com/MelonSmasher/)
 
 
-##License
+###License
 ----------
 
 The MIT License (MIT)

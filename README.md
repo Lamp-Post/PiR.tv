@@ -5,8 +5,8 @@
 Must have Node.js installed on the Raspberry Pi. To install Node follow this [link](https://github.com/DonaldDerek/rPi-cheat-sheet)
 
 ```
-	git clone https://github.com/DonaldDerek/PiR.tv.git 
-	cd PiR.tv/
+	git clone https://github.com/Lamp-Post/RaspberyPiTV.git 
+	cd RaspberyPiTV/
 	npm install
 	npm start
 ```	
